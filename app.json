@@ -1,34 +1,46 @@
 {
-  "name":"𝙴𝙻𝙻𝚈-𝚇𝙼𝙳",
-  "description":"Best whatsapp bot created by king 𝙴𝙻𝙻𝚈-𝚇𝙼𝙳",
+  "name":"Σ.И.ß-XM𝐃-𝚩𝚯T",
+  "description":"Best whatsapp bot developed by Σ.И.ß-XM𝐃-𝚩𝚯T",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://files.catbox.moe/5vy4b9.jpg",
-  "repository":"https://github.com/Kidorganic08/ELLY-XMD",
+  "logo":"https://files.catbox.moe/ul4n28.jpg",
+  "repository":"https://github.com/ekitale/maths-project",
   "succes_url":"/",
-  "stack":"container",
+  "stack":"heroku-24",
   "env":{
     "PREFIX":
     {
-      "description":"choose your prefix of bot",
+      "description":"choose your prefix for your bot",
       "value":".",
       "required":true
     },
-	  "ANTICALL":
+"AUTO_REACT":
     {
-      "description":"Enter yes for your bot to reject calls",
+      "description":"Enter yes for your bot to auto react",
       "value":"no",
       "required":false
     },
-	  "AUTO_BIO":
+"ANTILINK_GROUP":
     {
-      "description":"Enter yes for your bot to auto bio",
+      "description":"Enter yes for your bot to auto delete links and remove link senders",
       "value":"yes",
       "required":false
     },
-	    "AUTO_REACT_STATUS":
+"MENUTYPE":
     {
-      "description":"Enter yes for your bot to auto react status",
-      "value":"yes",
+      "description":"Enter 1 for small thumbnail menu, Enter 2 for big thumbnail menu, leave blank and they will be displaying randomly big or Small ",
+      "value":"",
+      "required":false
+    },
+"AUDIO_CHATBOT":
+    {
+      "description":"Enter yes for your bot to audio chat to messages when offline ",
+      "value":"no",
+      "required":false
+    },
+"AUTO_SAVE_CONTACTS":
+    {
+      "description":"Enter yes for your bot to auto save numbers",
+      "value":"no",
       "required":false
     },
 "AUTO_REACT_STATUS":
@@ -37,24 +49,42 @@
       "value":"yes",
       "required":false
     },
-	 "AUTO_REACT":
+"ANTICALL":
     {
-      "description":"Enter yes for your bot to auto react",
+      "description":"Enter yes for your bot to auto reject calls",
       "value":"no",
       "required":false
     },
+"CHATBOT":
+    {
+      "description":"Enter yes for your bot to auto reply message when offline",
+      "value":"no",
+      "required":false
+    },
+"AUTO_BIO":
+    {
+      "description":"Enter yes for your bot to auto bio or no to decline",
+      "value":"yes",
+      "required":false
+    },
+
     "AUTO_READ_STATUS":
     {
-      "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+      "description":"Your status will be reading automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"yes",
       "required":false
     }, "AUTO_DOWNLOAD_STATUS":
     {
-      "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
+      "description":"You status will be sending status to your inbox automatically (type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
-    }
-    ,
+    },
+    "AUTO_READ":
+    {
+      "description":"Your contact  will be reading messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+      "value":"no",
+      "required":false   
+      },
      "PM_PERMIT" :
      {
       "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
@@ -65,14 +95,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"ELLY-XMD",
+      "value":"Σ.И.ß-XM𝐃-𝚩𝚯T",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://files.catbox.moe/ktp2gk.jpg",
+      "value":"https://files.catbox.moe/ul4n28.jpg",
       "required":false
        
      },
@@ -84,34 +114,33 @@
     }
 	,
     "HEROKU_API_KEY": {
-    "description": "insert your heroku api-key (this is optionnal)",
-     "required" :false
+    "description": "Insert your heroku api-key copy it from your heroku account settings",
+     "required" :true
     },
   "HEROKU_APP_NAME": {
-    "description": "insert your heroku APP NAME (this is optionnal)",
-     "required" :false
+    "description": "Insert your heroku APP NAME enter same as the app name exactly, the fast name up there ",
+     "required" :true 
     }  
 	  ,
-    "SESSION_ID":
+    "NUMERO_OWNER":
     {
-      "description":"put your session ID , the code you receive after scanning Qr code",   
-      "value":"",
-      "required":true
+      
+    "description":"Enter here the number that is hosting the bot Eg,",   
+      "value":"254784934065",
+    "required":true
       
     },
     "OWNER_NAME":
     {
     
-    "desc": "Your Name",
+    "desc": "Owner name",
     "required": false,
-    "value": "ELLY TECH"
+    "value": "Σ.И.ß-XM𝐃-𝚩𝚯T"
   },
-    "NUMERO_OWNER":
-  {
-    
-    "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
-    "required":false,
-    "value": "255683514508"
+    "SESSION_ID":{
+    "description":"put your session ID , the code you received from from ibrahim adams site",   
+      "value":"",
+     "required":true
   },
     "WARN_COUNT":
   {
@@ -129,21 +158,16 @@
     "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
     "value":"2",
     "required": false
-	  
   },
-	    "AUTO_READ":{
-    "description":"Enter yes for auto read messages.",
-    "value":"no",
-    "required": false
-    },
-  "ANTI_DELETE_MESSAGE" : {
-    "description": "if you want to enable anti delete message put yes else put no",
-    "value": "no",
+  "ANTIDELETE_MESSAGES" : {
+    "description": "Deleted messages will be sent to your inbox, enter yes to enable else put no",
+    "value": "yes",
         "required": false
   }
   },
 
-    "buildpacks": [
+        
+  "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
@@ -155,15 +179,17 @@
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ],
+
   "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "standard-2x"
-    }
-  },
-  "addons": [
+                "worker": {
+                        "quantity": 1,
+                        "size": "basic"
+                }
+        },
+
+  "addons":[
     {
-      "plan": "heroku-postgresql:essential-0"
+      "plan":"heroku-postgresql"
     }
   ]
   }
