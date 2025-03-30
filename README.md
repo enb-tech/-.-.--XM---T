@@ -52,7 +52,7 @@
 <br>
 
 4.👇 Deploy to Heroku If your have account
-[![Deploy to Heroku](https://img.shields.io/static/v1?label=Deploy%20to&message=Heroku&color=430098&style=for-the-badge&logo=heroku&logoColor=white)](https://bmbtech.vercel.app/bmb.tech)  
+[![Deploy to Heroku](https://img.shields.io/static/v1?label=Deploy%20to&message=Heroku&color=430098&style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?template=https://github.com/enb-tech/ENB-XMD-BOT-/tree/main)  
 
 <a href="https://wa.me/message/47OXC25I75WAE1">
     <img align="left" alt="SIEGRIN | Whastapp" width="86px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
@@ -77,9 +77,4 @@ CONTACT DEVELOPER ON WHATSAPP
 <a href="https://wa.me/254784934065" target="_blank">
     <img alt="whatsapp Group" src="https://img.shields.io/badge/Σ.И.ß-XM𝐃-𝚩𝚯T contact -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-
-  
- 
-<a href="https://chat.whatsapp.com/JAR9vAVQ4igF8jXPCMzhkX" target="_blank">
-    <img alt="whatsapp Group" src="https://img.shields.io/badge/ Σ.И.ß-XM𝐃-𝚩𝚯T CHANNEL -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
     
