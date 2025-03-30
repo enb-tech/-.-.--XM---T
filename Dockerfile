@@ -9,9 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN  git clone https://github.com/enb-tech/ENB-XMD-BOT-  /root/Hans_BOt
-WORKDIR /root/kinghansmd/
-
+RUN git clone https://github.com/enb-tech/ENB-XMD-BOT- /root/zokou_BOt
+WORKDIR /root/zokou_Bot/
 
 
 COPY package.json .
