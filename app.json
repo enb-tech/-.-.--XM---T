@@ -2,7 +2,7 @@
   "name":"Σ.И.ß-XM𝐃-𝚩𝚯T",
   "description":"Best whatsapp bot developed by enb-xmd",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://catbox.moe/qk7x8w.jpg",
+  "logo":"https://files.catbox.moe/qk7x8w.jpg",
   "repository":"https://github.com/ekitale/maths-project",
   "succes_url":"/",
   "stack":"heroku-24",
@@ -79,7 +79,7 @@
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://catbox.moe/qk7x8w.jpg",
+      "value":"https://files.catbox.moe/qk7x8w.jpg",
       "required":false
        
      },
