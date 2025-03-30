@@ -1,5 +1,5 @@
  {
-  "name": "ENB-XMD",
+  "name": "enbxmd",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "whatsapp-bot",
     "bmb"
    ],
-  "author": "bmb",
+  "author": "enbxmd",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
