@@ -1,17 +1,47 @@
 {
   "name":"Σ.И.ß-XM𝐃-𝚩𝚯T",
-  "description":"Best whatsapp bot developed by Ibrahim adams",
+  "description":"Best whatsapp bot created by king Σ.И.ß-XM𝐃-𝚩𝚯T",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://files.catbox.moe/ul4n28.jpg",
-  "repository":"https://github.com/ekitale/maths-project",
+  "logo":"https://files.catbox.moe/9dg57w.jpg",
+  "repository":"https://github.com/enb-tech/ENB-XMD-BOT-",
   "succes_url":"/",
-  "stack":"heroku-24",
+  "stack":"container",
   "env":{
     "PREFIX":
     {
       "description":"choose your prefix of bot",
       "value":".",
       "required":true
+    },
+	  "ANTICALL":
+    {
+      "description":"Enter yes for your bot to reject calls",
+      "value":"no",
+      "required":false
+    },
+	  "AUTO_BIO":
+    {
+      "description":"Enter yes for your bot to auto bio",
+      "value":"yes",
+      "required":false
+    },
+	    "AUTO_REACT_STATUS":
+    {
+      "description":"Enter yes for your bot to auto react status",
+      "value":"yes",
+      "required":false
+    },
+"AUTO_REACT_STATUS":
+    {
+      "description":"Enter yes for your bot to auto react status",
+      "value":"yes",
+      "required":false
+    },
+	 "AUTO_REACT":
+    {
+      "description":"Enter yes for your bot to auto react",
+      "value":"no",
+      "required":false
     },
     "AUTO_READ_STATUS":
     {
@@ -23,45 +53,8 @@
       "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
-    },
-    "AUTO_READ":
-    {
-      "description":"Your contact  will be read messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
-      "value":"no",
-      "required":false   
-      },
-
-"AUTO_REACT_STATUS":
-    {
-      "description":"Enter yes for your bot to auto like status",
-      "value":"no",
-      "required":false
-    },
-	  "AUTO_REACT":
-    {
-      "description":"Enter yes for your bot to auto react",
-      "value":"no",
-      "required":false
-    },
-	  "CHATBOT":
-    {
-      "description":"Enter yes for your bot to auto reply messages",
-      "value":"no",
-      "required":false
-    },
-	    "AUTO_BIO":
-    {
-      "description":"Enter yes for your bot to auto bio",
-      "value":"yes",
-      "required":false
-    },
-	
-	"ANTICALL":
-    {
-      "description":"Enter yes for your bot to auto reject calls ",
-      "value":"no",
-      "required":false
-    },  
+    }
+    ,
      "PM_PERMIT" :
      {
       "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
@@ -118,7 +111,7 @@
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": ""
+    "value": "255"
   },
     "WARN_COUNT":
   {
@@ -134,18 +127,23 @@
   },
   "PRESENCE":{
     "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-    "value":"",
+    "value":"2",
     "required": false
+	  
   },
+	    "AUTO_READ":{
+    "description":"Enter yes for auto read messages.",
+    "value":"no",
+    "required": false
+    },
   "ANTI_DELETE_MESSAGE" : {
     "description": "if you want to enable anti delete message put yes else put no",
-    "value": "yes",
+    "value": "no",
         "required": false
   }
   },
 
-        
-  "buildpacks": [
+    "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
@@ -157,17 +155,16 @@
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ],
-
   "formation": {
-                "worker": {
-                        "quantity": 1,
-                        "size": "basic"
-                }
-        },
-
-  "addons":[
+    "worker": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  },
+  "addons": [
     {
-      "plan":"heroku-postgresql"
+      "plan": "heroku-postgresql:essential-0"
     }
   ]
   }
+	  
