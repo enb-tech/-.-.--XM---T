@@ -1,6 +1,6 @@
 {
-  "name":"Σ.И.ß-XM𝐃-𝚩𝚯T",
-  "description":"Best whatsapp bot created by king Σ.И.ß-XM𝐃-𝚩𝚯T",
+  "name":"ENB-XMD-BOT",
+  "description":"Best whatsapp bot created by king ENB-XMD-BOT",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://files.catbox.moe/9dg57w.jpg",
   "repository":"https://github.com/enb-tech/ENB-XMD-BOT-",
@@ -65,7 +65,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"Σ.И.ß-XM𝐃-𝚩𝚯T",
+      "value":"ENB-XMD-BOT",
       "required":false
 
     } ,
