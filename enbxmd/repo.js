@@ -1,86 +1,44 @@
-const util = require('util');
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
-const moment = require("moment-timezone");
-const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
+const { zokou } = require(__dirname + "/../framework/zokou");    
+const axios = require("axios");    
 
-zokou({ nomCom: "repo", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
-    }
+zokou({ nomCom: "repo", categorie: "General" }, async (dest, zk, commandeOptions) => {    
+    let { ms, repondre } = commandeOptions;    
 
+    const repoUrl = "https://github.com/enb-tech/ENB-XMD-BOT-";    
+    const imageUrl = "https://files.catbox.moe/6am24p.jpg";    
 
-    
+    try {    
+        const response = await axios.get(repoUrl);    
+        const repo = response.data;    
 
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
-    });
+        let repoInfo = `    
+╭══════════════⊷❍    
+┃ 🔥 *BMB XMD REPOSITORY* 🔥    
+┃ ❏ 𝗡𝗮𝗺𝗲: *${repo.name}*    
+┃ ❏ 𝗢𝘄𝗻𝗲𝗿: *${repo.owner.login}*    
+┃ ❏ 𝗦𝘁𝗮𝗿𝘀: ⭐ *${repo.stargazers_count}*    
+┃ ❏ 𝗙𝗼𝗿𝗸𝘀: 🍴 *${repo.forks_count}*    
+┃ ❏ 𝗜𝘀𝘀𝘂𝗲𝘀: 🛠️ *${repo.open_issues_count}*    
+┃ ❏ 𝗪𝗮𝘁𝗰𝗵𝗲𝗿𝘀: 👀 *${repo.watchers_count}*    
+┃ ❏ 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲: 🖥️ *${repo.language}*    
+┃ ❏ 𝗕𝗿𝗮𝗻𝗰𝗵𝗲𝘀: 🌿 *${repo.default_branch}*    
+┃ ❏ 𝗨𝗽𝗱𝗮𝘁𝗲𝗱 𝗼𝗻: 📅 *${new Date(repo.updated_at).toLocaleString()}*    
+┃ ❏ 𝗥𝗲𝗽𝗼 𝗟𝗶𝗻𝗸: 🔗 [Click Here](${repo.html_url})    
+╰══════════════⊷❍    
+        `;    
 
-    moment.tz.setDefault('Etc/GMT');
+        await zk.sendMessage(dest, {    
+            image: { url: imageUrl },    
+            caption: repoInfo,    
+            footer: "*ENB-XMD-BOT-GitHub Repository*",    
+            contextInfo: {    
+                forwardingScore: 999,    
+                isForwarded: true,    
+            },    
+        }, { quoted: ms });    
 
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-
-  let infoMsg =  `
-      *ENB-XMD-BOT IMPORTANT INFO* 
-❒───────────────────❒
-*GITHUB LINK*
->https://github.com/enb-tech/ENB-XMD-BOT-
-❒───────────────────❒
-*WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/0029VbAUgMN8PgsNmEEyBs1t
-⁠
-╭───────────────────❒
-│❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV1* : *ENB-XMD-BOT*
-│❒⁠⁠⁠⁠ *DEV2* : *ENB-XMD-BOT*
-⁠⁠⁠⁠╰───────────────────❒
-  `;
-    
-let menuMsg = `
-     *ENB-XMD*
-
-❒────────────────────❒`;
-
-   var lien = mybotpic();
-
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
-}
-
-}); 
-
-           
+    } catch (e) {    
+        console.log("🥵 Error fetching repository data: " + e);    
+        repondre("🥵 Error fetching repository data, please try again later.");    
+    }    
+});
