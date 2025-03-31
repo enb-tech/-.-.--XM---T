@@ -1,4 +1,4 @@
-const {zokou}=require("../frameworki/zokou")
+const {zokou}=require("../framework/zokou")
 const {getContentType}=require("@whiskeysockets/baileys")
 
 
@@ -57,7 +57,7 @@ zokou({ nomCom: "vv", aliases: ["send", "keep"], categorie: "new" }, async (dest
       } else if (msgRepondu.stickerMessage) {
         const media = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage);
         const stickerMess = new Sticker(media, {
-          pack: 'ENB-XMD-BOT',
+          pack: 'ENB-XMD',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -82,3 +82,4 @@ zokou({ nomCom: "vv", aliases: ["send", "keep"], categorie: "new" }, async (dest
     repondre('Mention the message that you want to save');
   }
 });
+      
