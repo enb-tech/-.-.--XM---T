@@ -2,7 +2,7 @@ const { zokou } = require("../framework/zokou");
 const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../bdd/sudo")
 const conf = require("../set");
 
-zokou({ nomCom: "owner", categorie: "General", reaction: "🇹🇿" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "owner", categorie: "General", reaction: "🤴" }, async (dest, zk, commandeOptions) => {
     const { ms , mybotpic } = commandeOptions;
     
   const thsudo = await isSudoTableNotEmpty()
@@ -55,12 +55,12 @@ zokou({ nomCom: "dev", categorie: "General", reaction: "🫶" }, async (dest, zk
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Σ.И.ß-XM𝐃-𝚩𝚯T", numero: "254784934065" },
-      { nom: "Σ.И.ß-XM𝐃-𝚩𝚯T", numero: "255687104419" },
+      { nom: "enb xmd", numero: "255687104419" },
+      { nom: "enb xmd", numero: "254784934065" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "Hello👋 Friend Welcome🤝 To Σ.И.ß-XM𝐃-𝚩𝚯T! here is the dev :\n\n";
+    let message = "👋 welcome to enb xnd here is the dev :\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -95,7 +95,7 @@ zokou({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOpti
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
   repondre("look on pm sir ")
-  await zk.sendMessage(auteurMessage,{text :`https://whatsapp.com/channel/0029VbAUgMN8PgsNmEEyBs1t},{quoted :ms})
+  await zk.sendMessage(auteurMessage,{text :`https://whatsapp.com/channel/0029VbAUgMN8PgsNmEEyBs1t`},{quoted :ms})
 
 })
 
@@ -103,12 +103,12 @@ zokou({ nomCom: "developer", categorie: "General", reaction: "🦁" }, async (de
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Σ.И.ß-XM𝐃-𝚩𝚯T", numero: "254784934065" },
-      { nom: "Σ.И.ß-XM𝐃-𝚩𝚯T", numero: "255687104419" },
+      { nom: "enb xmd", numero: "254784934065" },
+      { nom: "enb xmd", numero: "255687104419" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "👋 *Welcome to Σ.И.ß-XM𝐃-𝚩𝚯T* here is the developer numbers:\n\n";
+    let message = "👋 *Welcome to enb xmd* here is the developer numbers:\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -138,4 +138,3 @@ else {
     
 }
 });
-    
