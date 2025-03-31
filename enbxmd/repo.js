@@ -33,7 +33,7 @@ const fetchGitHubRepoDetails = async () => {
 };
 
 // Define the commands that can trigger this functionality
-const commands = ["repo1", "repo", "script", "sc"];
+const commands = ["enb", "repo", "script", "sc"];
 
 commands.forEach((command) => {
     zokou({ nomCom: command, categorie: "GitHub" }, async (dest, zk, commandeOptions) => {
@@ -71,7 +71,7 @@ commands.forEach((command) => {
             // Send the follow-up image first with a caption
             await zk.sendMessage(dest, {
                 image: { url: "https://files.catbox.moe/qk7x8w.jpg" }, // Updated image
-                caption: `✨ Repository Highlights ✨\n\n🛠️ Developed by *Σ.И.ß-XM𝐃-𝚩𝚯T*\n\nRepo URL:\nhttps://github.com/enb-tech/ENB-XMD-BOT-?tab=readme-ov-file`,
+                caption: `✨ Repository Highlights ✨\n\n🛠️ Developed by *ENB-XMD-BOT*\n\nRepo URL:\nhttps://github.com/enb-tech/ENB-XMD-BOT-`,
             });
 
             // Follow up with the GitHub repository details
@@ -85,4 +85,4 @@ commands.forEach((command) => {
         }
     });
 });
-              
+          
