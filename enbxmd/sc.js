@@ -37,7 +37,7 @@ const date = moment().format('DD/MM/YYYY');
    *Σ.И.ß-XM𝐃-𝚩𝚯T BOT IMPORTANT INFO* 
 ❒───────────────────❒
 *GITHUB LINK*
-https://github.com/bmbtz/Mr-B.M.B-MD
+https://github.com/enb-tech/ENB-XMD-BOT-
 
 *WHATSAPP CHANNEL*
 > https://whatsapp.com/channel/0029VbAUgMN8PgsNmEEyBs1t
@@ -48,7 +48,7 @@ https://chat.whatsapp.com/JAR9vAVQ4igF8jXPCMzhkX
 
 
 *FOR MORE INFO TAP ON THE LINK BELOW*
-> https://github.com/bmbtz/Mr-B.M.B-MD
+> https://github.com/enb-tech/ENB-XMD-BOT-
 ╭───────────────────❒
 │❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │❒⁠⁠⁠⁠ *DEV* : *Σ.И.ß-XM𝐃-𝚩𝚯T*
