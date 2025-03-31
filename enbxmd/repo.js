@@ -1,45 +1,44 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
+const { zokou } = require(__dirname + "/../framework/zokou");    
+const axios = require("axios");    
 
-zokou({ nomCom: "repo", catégorie:"Général", reaction: "✨", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
-  const githubRepo = 'https://api.github.com/repos/enb-tech/ENB-XMD-BOT-;
-  const img = 'https://files.catbox.moe/0cxusf.jpg';
+zokou({ nomCom: "repo", categorie: "General" }, async (dest, zk, commandeOptions) => {    
+    let { ms, repondre } = commandeOptions;    
 
-  try {
-    const response = await fetch(githubRepo);
-    const data = await response.json();
+    const repoUrl = "https://github.com/enb-tech/ENB-XMD-BOT-";    
+    const imageUrl = "https://files.catbox.moe/qk7x8w.jpg";    
 
-    if (data) {
-      const repoInfo = {
-        stars: data.stargazers_count,
-        forks: data.forks_count,
-        lastUpdate: data.updated_at,
-        owner: data.owner.login,
-      };
+    try {    
+        const response = await axios.get(repoUrl);    
+        const repo = response.data;    
 
-      const releaseDate = new Date(data.created_at).toLocaleDateString('en-GB');
-      const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
+        let repoInfo = `    
+╭══════════════⊷❍    
+┃ ✨ *ENB-XMD REPOSITORY* ✨    
+┃ ❏ 𝗡𝗮𝗺𝗲: *${repo.name}*    
+┃ ❏ 𝗢𝘄𝗻𝗲𝗿: *${repo.owner.login}*    
+┃ ❏ 𝗦𝘁𝗮𝗿𝘀: ⭐ *${repo.stargazers_count}*    
+┃ ❏ 𝗙𝗼𝗿𝗸𝘀: 🍴 *${repo.forks_count}*    
+┃ ❏ 𝗜𝘀𝘀𝘂𝗲𝘀: 🛠️ *${repo.open_issues_count}*    
+┃ ❏ 𝗪𝗮𝘁𝗰𝗵𝗲𝗿𝘀: 👀 *${repo.watchers_count}*    
+┃ ❏ 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲: 🖥️ *${repo.language}*    
+┃ ❏ 𝗕𝗿𝗮𝗻𝗰𝗵𝗲𝘀: 🌿 *${repo.default_branch}*    
+┃ ❏ 𝗨𝗽𝗱𝗮𝘁𝗲𝗱 𝗼𝗻: 📅 *${new Date(repo.updated_at).toLocaleString()}*    
+┃ ❏ 𝗥𝗲𝗽𝗼 𝗟𝗶𝗻𝗸: 🔗 [Click Here](${repo.html_url})    
+╰══════════════⊷❍    
+        `;    
 
-      const gitdata = `*hellow Friend
-this is* *ENB-XMD-BOT 👊.*\n *Join Group Chat* https://whatsapp.com/channel/0029VbAUgMN8PgsNmEEyBs1t
+        await zk.sendMessage(dest, {    
+            image: { url: imageUrl },    
+            caption: repoInfo,    
+            footer: "*ENB-XMD-BOT-GitHub Repository*",    
+            contextInfo: {    
+                forwardingScore: 999,    
+                isForwarded: true,    
+            },    
+        }, { quoted: ms });    
 
-🗼 *REPOSITORY:* ${data.html_url}
-💫 *STARS:* ${repoInfo.stars}
-🧧 *FORKS:* ${repoInfo.forks}
-📅 *RELEASE DATE:* ${releaseDate}
-🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
-🙊 *OWNER:* *Mr Dulla*
-🍃 *THEME:* *ENB-XMD-BOT*
-🍷 *Am Safe To Fight In My Life*
-__________________________________
-            *Made With enb xmd*`;
-
-      await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
-    } else {
-      console.log("Could not fetch data");
-    }
-  } catch (error) {
-    console.log("Error fetching data:", error);
-  }
+    } catch (e) {    
+        console.log("🥵 Error fetching repository data: " + e);    
+        repondre("🥵 Error fetching repository data, please try again later.");    
+    }    
 });
