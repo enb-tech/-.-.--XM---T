@@ -37,10 +37,10 @@ const date = moment().format('DD/MM/YYYY');
       *ENB-XMD-BOT IMPORTANT INFO* 
 ❒───────────────────❒
 *GITHUB LINK*
->https://github.com/bmb200/B.M.B-TECH1.git
+>https://github.com/enb-tech/ENB-XMD-BOT-
 ❒───────────────────❒
 *WHATSAPP CHANNEL*
-> https://chat.whatsapp.com/Jbp0o4EQtv080SYoyE2Mqi
+> https://whatsapp.com/channel/0029VbAUgMN8PgsNmEEyBs1t
 ⁠
 ╭───────────────────❒
 │❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
