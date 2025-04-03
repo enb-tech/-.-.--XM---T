@@ -1,7 +1,7 @@
 #       Σ.И.ß-XM𝐃-𝚩𝚯T
 
    <a>
-                                      <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F7255&width=435&lines=BOT+100%25+LEGIT" alt="Typing SVG" /></a>   
+                                      <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F7255&width=435&lines=BOT+100%25+LEGIT" alt="enbxmd" /></a>   
             
 <p align="center"> 
 <up A simple WhatsApp User Bot Coded By Σ.И.ß-XM𝐃-𝚩𝚯T</u>
@@ -19,8 +19,7 @@
 <a href="https://github.com/enb-tech/ENB-XMD-BOT-"><img title="Author" src="https://img.shields.io/badge/Σ.И.ß-XM𝐃-𝚩𝚯T-black?style=for-the-badge&logo=Github"></a> <a href="https://chat.whatsapp.com/BiK75nYnz33H06ge98I5aa"><img title="Author" src="https://img.shields.io/badge/GROUP-black?style=for-the-badge&logo=whatsapp"></a> <a href="https://wa.me/254784934065"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp">
 <p/>
 
- <p align="center">
-  <a href="https://wa.link/qd9uxj">
+ <p align="center"
     <img src="https://img.shields.io/badge/Pkdriller WEBSITE-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Generate Session ID"/>
   </a>
    
@@ -56,7 +55,7 @@
 
 'Courier New';">DEPLOY TO HEROKU</h2>
 <p align="left">
-    <a href="https://enbxmdbotverificationweb.vercel.app/Pkdeller">
+    <a href="https://enbxmdbotverificationweb.vercel.app/enb-tech">
  <img title="DEPLOY-ON HEROKU" src="https://img.shields.io/badge/DEPLOY-ON HEROKU-h?color=purple&style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
   
   
