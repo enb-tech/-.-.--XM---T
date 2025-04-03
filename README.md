@@ -2,7 +2,7 @@
 
    <a>
                                       <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F7255&width=435&lines=BOT+100%25+LEGIT" alt="enbxmd" /></a>   
-            
+         
 <p align="center"> 
 <up A simple WhatsApp User Bot Coded By Σ.И.ß-XM𝐃-𝚩𝚯T</u>
 </p>
@@ -146,8 +146,8 @@
 <p/>
 
  <p align="center">
-  <a href="https://pkdriller-site-support.vercel.app/">
-    <img src="https://img.shields.io/badge/Pkdriller WEBSITE-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Generate Session ID"/>
+  <a href="https://wa.link/qd9uxj">
+    
   </a>
    
 <p align="center">
@@ -182,10 +182,11 @@
 
 'Courier New';">DEPLOY TO HEROKU</h2>
 <p align="left">
-    <a href="https://pkxmdverificationweb.vercel.app/Pkdeller">
+    <a href="https://enbxmdbotverificationweb.vercel.app/enb-tech">
  <img title="DEPLOY-ON HEROKU" src="https://img.shields.io/badge/DEPLOY-ON HEROKU-h?color=purple&style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
   
- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=30&pause=1000&color=0000FF&center=true&vCenter=true&width=815&height=60&lines=▭+▬+▭+▬+▭+▬+▭+▬+▭+▬+▭)](https://git.io/typing-svg) 
+
+ 
 
 
 
