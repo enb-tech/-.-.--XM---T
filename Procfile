@@ -1,2 +1,0 @@
-
-worker: node enbxmd.js 
