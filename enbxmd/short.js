@@ -70,7 +70,7 @@ let downloadData;
 
     // Prepare the message with song details
     const messagePayload = {
-      caption: `\n*QUEEN-M MUSIC*\n
+      caption: `\n*Σ.И.ß-XM𝐃-𝚩𝚯T MUSIC*\n
 ╭━⊷
 ┃ *Title:* ${songTitle} 
 ┃ *Quality:* High
@@ -85,10 +85,10 @@ let downloadData;
         mimetype: 'audio/mpeg',
         contextInfo: {
           externalAdReply: {
-            title: "QUEEN-M" ,
+            title: "Σ.И.ß-XM𝐃-𝚩𝚯T" ,
             body: "Tap her to follow our channel",
             mediaType: 1,
-            sourceUrl:"https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x",
+            sourceUrl:"https://whatsapp.com/channel/0029VbAUgMN8PgsNmEEyBs1t",
             thumbnailUrl: firstVideo.thumbnail,
             renderLargerThumbnail: false,
             showAdAttribution: true,
