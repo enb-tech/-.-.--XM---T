@@ -1,3 +1,6 @@
+
+😅😅😂😂😂😂😂😂
+
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=DAA520&center=true&width=910&height=100&lines=THANKS FOR CHOOSING +ENB+XMD;WHATSAPP+BOT+CREATED+BY+ENB-TECH" alt="Typing SVG" /></a>
 
 
